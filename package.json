@@ -16,5 +16,14 @@
     "express": "^4.17.2",
     "mariadb": "^2.5.5",
     "sequelize": "^6.12.5"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omonteirox/Perguntas-e-Respostas.git"
+  },
+  "bugs": {
+    "url": "https://github.com/omonteirox/Perguntas-e-Respostas/issues"
+  },
+  "homepage": "https://github.com/omonteirox/Perguntas-e-Respostas#readme"
 }
