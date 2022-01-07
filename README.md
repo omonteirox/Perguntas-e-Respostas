@@ -10,3 +10,5 @@ De maneira rápida e fácil, essa plataforma foi feita seguindo um curso de node
     - A conexão com o Banco de dados
     - A exibição das informações do banco em uma tela com HTML e CSS
     - A utilização do bootstrap (mesmo que de maneira iniciante)
+    - A utilização do heroku para fazer deploy na aplicação
+    - link -> https://first-deploy-nodejs-gustavin.herokuapp.com/
