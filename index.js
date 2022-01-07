@@ -76,7 +76,17 @@ app.post("/answer", (req, res) => {
     res.redirect(`/question/${questionID}`);
   });
 });
-
+app.post("/deleteAnswer", (req, res) => {
+  console.log("entrei");
+  let id = req.body.id;
+  Question.destroy({
+    where: {
+      id: id,
+    },
+  }).then(() => {
+    res.redirect("/");
+  });
+});
 app.listen(PORT, () => {
   console.log(`Running at ${PORT}`);
 });
