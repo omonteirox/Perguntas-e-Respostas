@@ -10,6 +10,10 @@ const Question = connection.define("questions", {
     type: Sequelize.TEXT,
     allowNull: false,
   },
+  userName:{
+    type: Sequelize.STRING,
+    allowNull: false,
+  }
 });
 
 Question.sync({ force: false }).then(() => {

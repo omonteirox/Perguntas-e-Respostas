@@ -52,14 +52,15 @@ app.get("/question/:id", (req, res) => {
       });
     }
   });
-  // res.render("expanded");
 });
 app.post("/saveQuestions", (req, res) => {
   let title = req.body.title;
   let description = req.body.description;
+  let userName = req.body.userName;
   Question.create({
     title: title,
     description: description,
+    userName: userName,
   }).then(() => {
     console.log("Salvo com sucesso");
     res.redirect("/");
@@ -75,6 +76,7 @@ app.post("/answer", (req, res) => {
     res.redirect(`/question/${questionID}`);
   });
 });
+
 app.listen(PORT, () => {
   console.log(`Running at ${PORT}`);
 });

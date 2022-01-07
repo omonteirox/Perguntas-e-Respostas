@@ -13,6 +13,8 @@
                     <%=question.description%>
                 </p>
                 <hr>
+                <p class="display-6">quem te perguntou foi: <%=question.userName%></p>
+                <hr>
                 <form method="post" action="/answer">
                     <h3>Responda:</h3>
                     <textarea placeholder="Digite sua Resposta" class="form-control" name="body" id=""></textarea>
