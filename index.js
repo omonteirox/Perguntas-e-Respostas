@@ -75,6 +75,6 @@ app.post("/answer", (req, res) => {
     res.redirect(`/question/${questionID}`);
   });
 });
-app.listen(PORT, () => {
+app.listen(process.env.PORT || 5000, () => {
   console.log(`Running at localhost:${PORT}`);
 });
