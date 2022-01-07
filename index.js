@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
-const PORT = 8080;
+const PORT = 3306;
 const connection = require("./database/db");
 const Question = require("./database/models/Questions");
 const Answer = require("./database/models/Answer");
@@ -75,6 +75,6 @@ app.post("/answer", (req, res) => {
     res.redirect(`/question/${questionID}`);
   });
 });
-app.listen(process.env.PORT || 5000, () => {
+app.listen(process.env.PORT || PORT, () => {
   console.log(`Running at localhost:${PORT}`);
 });
